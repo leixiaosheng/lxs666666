@@ -1,1 +1,104 @@
-# lxs666666
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奕明先生简介</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #95a5a6;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bkimg.cdn.bcebos.com/pic/0823dd54564e925861bf5f919482d158cdbf4ec2" alt="雷先生照片" class="profile-img">
+        <h1>奕明</h1>
+        <p class="title">高级软件工程师 | 技术顾问</p>
+    </header>
+
+    <section>
+        <h2>个人简介</h2>
+        <p>奕明先生是一位经验丰富的技术专家，拥有10年以上软件开发和技术管理经验。除此之外，擅长摄影，常驻广州汉溪长隆。</p>
+    </section>
+
+    <section>
+        <h2>专业技能</h2>
+        <ul>
+            <li>精通JavaScript/TypeScript和主流前端框架</li>
+            <li>熟悉后端开发(Node.js/Python/Java)</li>
+            <li>云计算和DevOps实践</li>
+            <li>团队领导和技术培训</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>工作经历</h2>
+        <p><strong>XX科技有限公司</strong> - 技术总监 (2018-至今)</p>
+        <p>带领30人技术团队，负责公司核心技术架构设计和产品研发。</p>
+
+        <p><strong>YY互联网公司</strong> - 高级开发工程师 (2013-2018)</p>
+        <p>参与多个大型Web项目的架构设计和开发实施。</p>
+    </section>
+
+    <section>
+        <h2>联系方式</h2>
+        <p>邮箱: leixiansheng@example.com</p>
+        <p>电话: 138-XXXX-XXXX</p>
+        <p>GitHub: github.com/leixiansheng</p>
+    </section>
+
+    <footer>
+        <p>© 2023 雷先生个人简介. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
