@@ -3,102 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>奕明先生简介</title>
+    <title>奕明任务管理系统</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
-            max-width: 800px;
+            line-height: 1.6;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
         }
         header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .title {
-            color: #7f8c8d;
-            font-weight: normal;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-            border: 5px solid #fff;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        section {
-            margin-bottom: 25px;
-            background: white;
+            background-color: #2c3e50;
+            color: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            text-align: center;
         }
-        h2 {
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #3498db;
+        }
+        .profile-info h2 {
+            margin: 0;
             color: #3498db;
-            margin-top: 0;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+        .task-container {
+            display: flex;
+            gap: 20px;
+        }
+        .task-column {
+            flex: 1;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .task-column h3 {
+            border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
-            border-bottom: 1px dashed #eee;
+            color: #2c3e50;
+        }
+        .task {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #3498db;
+            border-radius: 3px;
+        }
+        .task h4 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        .task p {
+            margin: 5px 0;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .priority-high {
+            border-left-color: #e74c3c;
+        }
+        .priority-medium {
+            border-left-color: #f39c12;
+        }
+        .priority-low {
+            border-left-color: #2ecc71;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            color: #95a5a6;
-            font-size: 14px;
+            margin-top: 20px;
+            padding: 10px;
+            color: #7f8c8d;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://bkimg.cdn.bcebos.com/pic/0823dd54564e925861bf5f919482d158cdbf4ec2" alt="雷先生照片" class="profile-img">
-        <h1>奕明</h1>
-        <p class="title">高级软件工程师 | 技术顾问</p>
+        <h1>广州奕明科技有限公司任务管理系统</h1>
     </header>
 
-    <section>
-        <h2>个人简介</h2>
-        <p>奕明先生是一位经验丰富的技术专家，拥有10年以上软件开发和技术管理经验。除此之外，擅长摄影，常驻广州汉溪长隆。</p>
-    </section>
+    <div class="profile">
+        <img src="https://via.placeholder.com/80" alt="奕明头像">
+        <div class="profile-info">
+            <h2>奕明</h2>
+            <p>广州奕明科技有限公司总经理</p>
+            <p>今日任务：7项 | 已完成：3项</p>
+        </div>
+    </div>
 
-    <section>
-        <h2>专业技能</h2>
-        <ul>
-            <li>精通JavaScript/TypeScript和主流前端框架</li>
-            <li>熟悉后端开发(Node.js/Python/Java)</li>
-            <li>云计算和DevOps实践</li>
-            <li>团队领导和技术培训</li>
-        </ul>
-    </section>
+    <div class="task-container">
+        <div class="task-column">
+            <h3>待处理</h3>
+            <div class="task priority-high">
+                <h4>与投资方会议</h4>
+                <p>时间：今天 14:00</p>
+                <p>地点：公司会议室A</p>
+                <p>准备融资计划书</p>
+            </div>
+            <div class="task priority-medium">
+                <h4>新产品研发评审</h4>
+                <p>时间：明天 10:00</p>
+                <p>需要审核技术团队提交的方案</p>
+            </div>
+        </div>
 
-    <section>
-        <h2>工作经历</h2>
-        <p><strong>XX科技有限公司</strong> - 技术总监 (2018-至今)</p>
-        <p>带领30人技术团队，负责公司核心技术架构设计和产品研发。</p>
+        <div class="task-column">
+            <h3>进行中</h3>
+            <div class="task priority-high">
+                <h4>年度财报编制</h4>
+                <p>财务部正在准备数据</p>
+                <p>截止日期：本周五</p>
+            </div>
+            <div class="task priority-medium">
+                <h4>员工培训计划</h4>
+                <p>与HR部门讨论新员工培训方案</p>
+                <p>已完成初步框架</p>
+            </div>
+            <div class="task priority-low">
+                <h4>办公室装修</h4>
+                <p>设计方案已确认</p>
+                <p>施工方下周进场</p>
+            </div>
+        </div>
 
-        <p><strong>YY互联网公司</strong> - 高级开发工程师 (2013-2018)</p>
-        <p>参与多个大型Web项目的架构设计和开发实施。</p>
-    </section>
-
-    <section>
-        <h2>联系方式</h2>
-        <p>邮箱: leixiansheng@example.com</p>
-        <p>电话: 138-XXXX-XXXX</p>
-        <p>GitHub: github.com/leixiansheng</p>
-    </section>
+        <div class="task-column">
+            <h3>已完成</h3>
+            <div class="task">
+                <h4>董事会季度报告</h4>
+                <p>已完成并发送给各位董事</p>
+                <p>完成时间：昨天</p>
+            </div>
+            <div class="task">
+                <h4>新员工面试</h4>
+                <p>技术岗位3人，市场岗位2人</p>
+                <p>已发出offer</p>
+            </div>
+            <div class="task">
+                <h4>供应商合同续签</h4>
+                <p>主要供应商合同已续签一年</p>
+                <p>条款有所优化</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>© 2023 雷先生个人简介. 保留所有权利.</p>
+        <p>© 2023 广州奕明科技有限公司 - 总经理办公室</p>
+        <p>最后更新：2023年11月15日</p>
     </footer>
 </body>
 </html>
